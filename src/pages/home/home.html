@@ -1,0 +1,18 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+    <div class="button" [ngClass]="{
+      'loading': loading,
+      'centerPos': centerPos,
+      'fullScr': fullScr
+    }" (click)="login()">
+
+        <p *ngIf="is_ligin_txt" class="login-txt">{{LoginTxt}}</p>
+        <div *ngIf="!is_ligin_txt" class="loading-txt" style="position: relative;">
+            <div id="loader"></div>
+        </div>
+
+    </div>
+</ion-content>

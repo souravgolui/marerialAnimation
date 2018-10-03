@@ -1,0 +1,94 @@
+page-home {
+    .scroll-content {
+        overflow: hidden;
+    }
+    .button {
+        width: 270px;
+        border: 1px solid #ab003c;
+        height: 60px;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        bottom: 19px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #ab003c;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        color: #fff;
+        font-weight: 600;
+        border-radius: 35px;
+        transition: all 0.5s;
+    }
+    .loading {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        line-height: 50px;
+    }
+    .button.centerPos {
+        transform: translate(0%, -500%);
+    }
+    .button.fullScr {
+        transform: scale(30);
+    }
+    #loader {
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        z-index: 1;
+        width: 26px;
+        height: 26px;
+        border: 2px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 2px solid #3498db;
+        width: 26px;
+        height: 26px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s
+    }
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+}
